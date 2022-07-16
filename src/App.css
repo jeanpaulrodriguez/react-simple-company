@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+/*------------Global----------*/
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/*------------Global----------*/
+/*------------header----------*/
+header {
+  padding: 20px 0;
+  background-color: black;
+}
+header ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+header ul li a {
+  color: white;
+  font-weight: 500;
+  transition: 0.5s;
+}
+header ul li a:hover {
+  color: #6B5FB4;
+  font-weight: 500;
+}
+.logo > img {
+  width: 35%;
+}
+.HeaderIcon {
+  color: white;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+.HeaderIcon:hover {
+  color: #6B5FB4;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar-items-icon {
+  color: #000;
+  display: none;
+}
+header.active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: black;
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
+  width: 100%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  header .icon {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-sidebar {
+    position: absolute;
+    display: block;
+    background-color: black;
+    left: 50px;
+    top: 75px;
+    transition: 0.5s;
+    width: 100%;
+    height: 30vh;
+    z-index: 5;
+  }
+
+  .nav-links-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  header ul li {
+    margin-bottom: 30px;
+  }
+
+  .navbar-items-icon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+  }
+}
+/*------------header----------*/
+/*------------ home ----------*/
+.left,
+.right {
+  width: 50%;
+  position: relative;
+}
+.flex {
+  display: flex;
+}
+.topMarign {
+  margin-top: 80px;
+}
+.home {
+  height: 90vh;
+}
+.home .img {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+.home img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 100%;
+  object-fit: contain;
+  transform: scale(1.1);
+}
+.home h1 {
+  font-size: 60px;
+}
+.SocailIcon i {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.SocailIcon i:hover {
+  color: #fff;
+}
+.facebook {
+  color: #4267b2;
+  border: 1px solid #4267b2;
+}
+.facebook:hover {
+  background: #4267b2;
+}
+.instagram {
+  color: #dc2743;
+  border: 1px solid #dc2743;
+}
+.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 15px 40px;
+  background: #6B5FB4;
+}
+.primary-btn:hover {
+  background: #0984e3;
+  box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
+}
+.home .right {
+  margin-top: 15%;
+}
+.home .SocailIcon {
+  margin: 30px 0;
+}
+.home p {
+  margin-bottom: 20px;
+}
+p {
+  color: black;
+  font-weight: 500;
+  line-height: 30px;
+}
+/*------------ home ----------*/
+/*------------ Branding ----------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.Branding {
+  background-color: black;
+  color: #fff;
+  margin-top: 35px;
+  padding: 80px 0;
+}
+.Branding h1 {
+  font-size: 40px;
+  color: #6B5FB4;
+  margin-right: 20px;
+}
+.Branding h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 10px 0 20px 0;
+}
+.Branding p {
+  color: #fff;
+  opacity: 0.7;
+}
+/*------------ Branding ----------*/
+/*------------ about ----------*/
+.mtop {
+  margin-top: 50px;
+}
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6B5FB4;
+  margin: 20px 0;
+}
+.heading h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.about p {
+  margin-bottom: 20px;
+}
+.about .left {
+  padding-right: 30px;
+}
+
+.about .img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+.about img {
+  object-fit: contain;
+}
+.about .img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  right: 0;
+  background-color: #000;
+  width: 600px;
+  height: 86vh;
+  z-index: -1;
+}
+
+/*------------ about ----------*/
+/*------------ Servicios ----------*/
+.Services {
+  text-align: center;
+  background-color: black;
+  padding: 50px 0;
+}
+.Services .box {
+  text-align: left;
+}
+.Services img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.Services .text {
+  background: #fff;
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 6%);
+  padding: 30px;
+  margin: 20px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+}
+.Services .heading  h1 {
+  color: white;
+}
+.Services .text h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #6B5FB4;
+}
+/*------------ Servicios ----------*/
+
+
+/*------------ footer ----------*/
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  
+}
+footer {
+  background-color: white;
+  padding: 100px 0 0 0;
+  color: black;
+  
+}
+footer p {
+  color: black;
+  margin: 20px 0;
+}
+footer .SocailIcon i {
+  background-color: black;
+  border: 1px solid black;
+}
+footer h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #6B5FB4;
+}
+footer li {
+  color: black;
+  margin-bottom: 15px;
+}
+footer li:before {
+  content: "·";
+  font-size: 40px;
+  vertical-align: middle;
+  line-height: 10px;
+  margin-right: 20px;
+  color: #6B5FB4;
+}
+footer .box p {
+  margin: 0;
+  margin-top: 15px;
+}
+footer span {
+  color: #6B5FB4;
+  opacity: 1;
+}
+footer .icon {
+  margin-top: 20px;
+  display: flex;
+}
+footer .icon i {
+  color: #6B5FB4;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+footer .box img {
+    width: 25%;
+}
+.legal {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 70px;
+  padding: 20px 0;
+}
+/*------------ footer ----------*/
+@media screen and (max-width: 768px) {
+  /*------------ home ----------*/
+  .left,
+  .right {
+    width: 100%;
+  }
+  .home .container {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .home {
+    height: 134vh;
+  }
+  .home .img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .home img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+  }
+  /*------------ home ----------*/
+  /*------------ Branding ----------*/
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /*------------ Branding ----------*/
+  /*------------ about ----------*/
+  .about .container {
+    flex-direction: column;
+  }
+  .about .img {
+    width: 100%;
+    height: 100%;
+  }
+  .about img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .about .img::after {
+    display: none;
+  }
+  /*------------ about ----------*/
+  
+
+  /*------------ footer ----------*/
+  footer .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*------------ footer ----------*/
+}
+/*------------ pages ----------*/
+.pagesContent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*------------ pages ----------*/
